@@ -1,17 +1,18 @@
-import React, { PropsWithChildren } from "react";
+import React, { PropsWithChildren, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "images/logo.png";
-import {
-  container,
-  nav,
-  header,
-  menu,
-  headerMedia,
-} from "layout/Header/e.index";
+import { nav, header, menu, headerMedia } from "layout/Header/e.index";
 import MenuIcon from "@material-ui/icons/Menu";
 import NavList from "./NavList";
 
 function Header({ children }: PropsWithChildren<{}>) {
+  const [menuCollpase, setMenuCollapse] = useState(false);
+
+  const menuControl = {
+    menuCollpase,
+    setMenuCollapse,
+  };
+
   return (
     <>
       <header className={`${header} ${headerMedia}`}>
@@ -21,11 +22,16 @@ function Header({ children }: PropsWithChildren<{}>) {
               <img src={logo} alt="" className="logo" />
             </Link>
 
-            <div className={menu}>
+            <div
+              className={menu}
+              onClick={() => {
+                setMenuCollapse((prev) => !prev);
+              }}
+            >
               <MenuIcon />
             </div>
 
-            <NavList />
+            <NavList {...menuControl} />
           </nav>
         </div>
       </header>

@@ -47,6 +47,12 @@ const globalCSS = css`
   body {
     background-color: cornflowerblue;
   }
+
+  .centering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 function GlobalStyle() {

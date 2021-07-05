@@ -29,7 +29,9 @@ const nav = css`
   }
 `;
 
-const menu = css``;
+const menu = css`
+  cursor: pointer;
+`;
 
 const headerMedia = css`
   /* @media ${device.tablet} {
