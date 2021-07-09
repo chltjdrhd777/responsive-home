@@ -2,11 +2,11 @@ import { css } from "@emotion/css/macro";
 
 const navUl = css`
   background-color: #d7d4ed;
-  width: 25rem;
+  width: 30rem;
   height: 100vh;
   position: fixed;
   top: 0;
-  right: -26rem;
+  right: -31rem;
   z-index: 1500;
   flex-direction: column;
   transition: all 0.65s ease-in-out;

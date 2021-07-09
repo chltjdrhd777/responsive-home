@@ -44,10 +44,6 @@ const globalCSS = css`
     padding: 0 1.5rem;
   }
 
-  body {
-    background-color: cornflowerblue;
-  }
-
   .centering {
     display: flex;
     align-items: center;

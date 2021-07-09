@@ -4,10 +4,10 @@ import { device } from "emotionCSS/theme";
 const header = css`
   width: 100%;
   height: 5rem;
-  /* position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: 1; */
+  z-index: 1;
 `;
 
 const container = css``;
