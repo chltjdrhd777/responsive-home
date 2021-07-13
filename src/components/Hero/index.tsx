@@ -1,5 +1,5 @@
 import React from "react";
-import { heroSection, container, mainMessage } from "./e.index";
+import { heroSection, mainMessage } from "./e.index";
 import { Link } from "react-router-dom";
 
 function Hero() {

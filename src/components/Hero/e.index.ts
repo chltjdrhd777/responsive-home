@@ -35,7 +35,6 @@ const heroSection = css`
   }
 `;
 
-const container = css``;
 const mainMessage = css`
   & > h3 {
     font-size: 1.6rem;
@@ -64,4 +63,4 @@ const mainMessage = css`
   }
 `;
 
-export { heroSection, container, mainMessage };
+export { heroSection, mainMessage };
