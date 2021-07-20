@@ -6,32 +6,11 @@ import camping from "images/camping.jpg";
 const outDoorSection = css`
   padding: 0;
 `;
-const outDoorHeading = css`
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 10rem;
-  color: rgba(0, 0, 0, 0.7);
 
-  & > h1 {
-    font-family: "Aldrich", sans-serif;
-    font-size: 2em;
-    margin: 0.5rem 0 1rem;
-  }
+const outDoorHeading = css``;
 
-  & > h3 {
-    font-size: 1.4rem;
-  }
+const outDoorGrid = css``;
 
-  & > p {
-    text-transform: lowercase;
-  }
-`;
-
-const outDoorGrid = css`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 2.5rem;
-`;
 const outDoorGridItems = css`
   height: 40rem;
   padding: 5rem;

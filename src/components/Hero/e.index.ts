@@ -49,18 +49,6 @@ const mainMessage = css`
   & > p {
     text-transform: lowercase;
   }
-
-  & .btn {
-    background-color: #eb648c;
-    border-radius: 2rem;
-    color: #fafafa;
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 1rem 2.5rem;
-    &:hover {
-      background-color: #ce587b;
-    }
-  }
 `;
 
 export { heroSection, mainMessage };

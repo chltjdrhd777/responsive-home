@@ -13,13 +13,13 @@ function Outdoor() {
   return (
     <section className={outDoorSection}>
       <div className="container">
-        <div className={outDoorHeading}>
+        <div className="heading">
           <h3>Experinece</h3>
           <h1>The thrilling outdoors</h1>
           <p>Loarm door sit outDoor. construct your world</p>
         </div>
 
-        <div className={outDoorGrid}>
+        <div className="grid">
           <div className={outDoorGridItems}>
             <AccessibilityNewIcon />
             <h1>Star gazing</h1>

@@ -31,23 +31,38 @@ class ProfileCSS {
     }
   `;
   readonly profile = css`
-    /* width: 100%;
-    color: #fafafa;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; */
     width: 100%;
     color: #fafafa;
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
   `;
 
-  readonly textBox = css``;
-  readonly customer = css``;
+  readonly textBox = css`
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+
+    & > svg {
+      position: absolute;
+      top: -9rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 8rem;
+      color: #cb648c;
+      opacity: 0.5;
+      z-index: -1;
+    }
+  `;
+  readonly customer = css`
+    & > img {
+      width: 10rem;
+      border-radius: 100%;
+      border: 3px solid #cb648c;
+    }
+  `;
 }
 
 const profileCSS = new ProfileCSS();
